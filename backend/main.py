@@ -36,7 +36,7 @@ class ChatRequest(BaseModel):
 async def chat(request: ChatRequest):
     # Set up Gemini model
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+        model_name="gemini-1.5-flash",
         system_instruction="You are a helpful, friendly, and concise AI assistant. Keep responses clear and conversational."
     )
 
